@@ -27,11 +27,11 @@ $f3->route('GET /breakfast', function () {
     echo $view->render('views/breakfast.html');
 });
 
-//define a lunch route
-$f3->route('GET /lunch', function () {
+//define a lunch/sandwich route
+$f3->route('GET /lunch/sandwich', function () {
     //echo "Test";
     $view = new Template();
-    echo $view->render('views/lunch.html');
+    echo $view->render('views/sandwich.html');
 });
 
 //run fat free
