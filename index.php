@@ -22,7 +22,9 @@ $f3->route('GET /', function() {
 
 //define a breakfast route
 $f3->route('GET /breakfast', function () {
-    echo "breakfast";
+    //echo "breakfast";
+    $view = new Template();
+    echo $view->render('views/breakfast.html');
 });
 
 //run fat free
